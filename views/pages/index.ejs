@@ -10,17 +10,16 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title> <%= pageTitle %>  Logistics</title>
+    <title><%= pageTitle %> Logistics</title>
   </head>
   <body>
-    <!--Navigation Bar-->
-    <%- include('./partials/navigation') %> 
+    <%- include('../partials/navigation') %> 
     <!-- Banner -->
     <section>
       <img
         style="height: 550px"
         width="100%"
-        src="https://images.pexels.com/photos/161764/golden-gate-bridge-suspension-san-francisco-california-161764.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        src="img/banner2.jpeg"
         class="img-fluid"
         alt="banner"
       />
@@ -31,9 +30,7 @@
       <header>
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
           <h1 class="display-4 fw-normal">Pricing</h1>
-          <p class="fs-5 text-muted">
-            Let us help you ship your goods
-          </p>
+          <p class="fs-5 text-muted">Let us help you ship your goods</p>
         </div>
       </header>
 
@@ -220,100 +217,6 @@
     </div>
   </body>
   <div class="b bg-dark">
-    <footer>
-      <div class="row">
-        <div class="col-12 col-md">
-          <img
-            class="mb-2"
-            src="/docs/5.1/assets/brand/bootstrap-logo.svg"
-            alt=""
-            width="24"
-            height="19"
-          />
-          <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Cool stuff</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Random feature</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Team feature</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Stuff for developers</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Another one</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Last time</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Resource</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Resource name</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Another resource</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Final resource</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#">Team</a>
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Locations</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Privacy</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#">Terms</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <%- include('../partials/footer') %>
   </div>
 </html>
