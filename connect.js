@@ -6,3 +6,5 @@ const pool = new Pool({
   host: "localhost",
   database: "logistics",
 });
+
+module.exports = { pool };
