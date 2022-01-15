@@ -9,7 +9,6 @@ app.set("view engine", "ejs");
 
 app.get("/", (request, response) => {
   response.render('pages/index', {pageTitle: 'Welcome'})
-  
 });
 
 const inventoryRoutes = require('./routes/inventoryRoutes');
