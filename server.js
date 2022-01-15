@@ -1,4 +1,5 @@
 const express = require("express");
+const { db } = require('./connect');
 
 const app = express();
 const port = 3000;
@@ -11,14 +12,12 @@ app.get("/", (request, response) => {
   
 });
 
-app.get("/inventory", (request, response) => {
-  response.render('pages/inventory', {pageTitle: 'Welcome'})
-  
-});
+const inventoryRoutes = require('./routes/inventoryRoutes');
+app.use('/inventory', inventoryRoutes(db));
 
-app.get("/deleted", (request, response) => {
-  response.render('pages/deletedItems', {pageTitle: 'Welcome'})
-});
+const deletedRoutes = require('./routes/deletedRoutes');
+app.use('/deletedItems', deletedRoutes(db));
+
 
 app.listen(port, () => {
   console.log(`Express server listening on port ${port}`);
