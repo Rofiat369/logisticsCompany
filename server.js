@@ -17,20 +17,17 @@ app.set("view engine", "ejs");
 
 app.get("/", (request, response) => {
   response.render('pages/index', {pageTitle: 'Welcome'})
-  // response.json({ info: "Node.js, Express, and Postgres API" });
+  
 });
 
 app.get("/inventory", (request, response) => {
   response.render('pages/inventory', {pageTitle: 'Welcome'})
-  // response.json({ info: "Node.js, Express, and Postgres API" });
+  
 });
 
-//ITEMS ROUTES
-// app.get("/items", db.getItems);
-// app.get("/items/:id", db.getItemById);
-// app.post("/items", db.createItem);
-// app.put("/items/:id", db.updateItem);
-// app.delete("/items/:id", db.deleteItem);
+app.get("/deleted", (request, response) => {
+  response.render('pages/deletedItems', {pageTitle: 'Welcome'})
+});
 
 app.listen(port, () => {
   console.log(`Express server listening on port ${port}`);
