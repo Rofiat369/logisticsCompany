@@ -29,12 +29,3 @@ app.delete("/items/:id", db.deleteItem);
 app.listen(port, () => {
   console.log(`Express server listening on port ${port}`);
 });
-
-const { Pool } = require("pg");
-
-const pool = new Pool({
-  user: "vagrant",
-  password: "vagrant",
-  host: "localhost",
-  database: "logistics",
-});
