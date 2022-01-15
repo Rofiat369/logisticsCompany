@@ -28,49 +28,10 @@
     <title> <%= pageTitle %> Logistics</title>
   </head>
   <body>
-    <%- include('./partials/navigation') %> 
+    
+    <%- include('../partials/navigation') %> 
 <!-- Side bar -->
-    <div class="container-fluid">
-      <div class="row">
-        <nav
-          id="sidebarMenu"
-          class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse"
-        >
-          <div class="position-sticky pt-3">
-            <div align="center">
-              <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-3-1024.png" alt="" width="50" height="50">
-              <hr />
-            </div>
-            <ul class="nav flex-column nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
-                  <span data-feather="home"></span>
-                  Dashboard
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">
-                  <span data-feather="file"></span>
-                  Current Inventory
-                </a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
-                  Update Inventory
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span data-feather="layers"></span>
-                  Deleted Inventories
-                </a>
-              </li>
-            </ul>
-            </ul>
-          </div>
-        </nav>
+<%- include('../partials/sidebar') %>
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
           <div
@@ -260,101 +221,8 @@
       </div>
     </div>
   </body>
+
   <div class="b bg-dark">
-    <footer>
-      <div class="row">
-        <div class="col-12 col-md">
-          <img
-            class="mb-2"
-            src="/docs/5.1/assets/brand/bootstrap-logo.svg"
-            alt=""
-            width="24"
-            height="19"
-          />
-          <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Cool stuff</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Random feature</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Team feature</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Stuff for developers</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Another one</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Last time</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Resource</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Resource name</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Another resource</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Final resource</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#">Team</a>
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Locations</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Privacy</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#">Terms</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <%- include('../partials/footer') %> 
   </div>
 </html>
