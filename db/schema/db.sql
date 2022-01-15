@@ -12,5 +12,7 @@ CREATE TABLE items (
   Item_quantity INTEGER NOT NULL,
   location VARCHAR(255) NOT NUll,
   Created_at TIMESTAMP NOT NULL,
-  vendor_id INTEGER REFERENCES vendors(id) ON DELETE CASCADE
+  Total MONEY NOT NULL,
+  vendor_id INTEGER REFERENCES vendors(id) ON DELETE CASCADE,
+  status INTEGER DEFAULT 0
 );
