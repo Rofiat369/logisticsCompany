@@ -8,7 +8,6 @@ const getItems = (db) =>{
   `, [0])
   .then(data => 
     {
-      // console.log(data.rows)
       return data.rows
     }
     )
@@ -18,7 +17,6 @@ module.exports = (db) => {
   router.get('/', (request, response) => {
     getItems(db).then(data => 
       {
-        // console.log(data);
         response.render('pages/inventory', {pageTitle: 'Welcome', items:data})
       }
       )
