@@ -15,7 +15,10 @@ const inventoryRoutes = require('./routes/inventoryRoutes');
 app.use('/inventory', inventoryRoutes(db));
 
 const deletedRoutes = require('./routes/deletedRoutes');
-app.use('/deletedItems', deletedRoutes(db));
+app.use('/delete', deletedRoutes(db));
+
+const restoredRoutes = require('./routes/restoreRoutes');
+app.use('/restore', restoredRoutes(db));
 
 
 app.listen(port, () => {
