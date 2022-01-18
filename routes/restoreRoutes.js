@@ -11,7 +11,6 @@ const restoreItems = (db, id) => {
 module.exports = (db) => {
   router.get('/:id', (request, response) => {
     const id = request.params.id;
-    console.log(id)
     restoreItems(db, id).then(items => 
       {
         console.log(data);
