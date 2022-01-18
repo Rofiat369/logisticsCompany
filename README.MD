@@ -13,4 +13,4 @@ This app was created using JQuery, EJS, NodeJS and BootStrap
 ![Inventory](https://github.com/Rofiat369/logisticsCompany/blob/master/public/img/inventoryPage.png)
 
 ## Deletion Page
-![Restore](https://github.com/Rofiat369/logisticsCompany/blob/master/public/img/inventoryPage.png)
+![Restore](https://github.com/Rofiat369/logisticsCompany/blob/master/public/img/deletedItems.png)
