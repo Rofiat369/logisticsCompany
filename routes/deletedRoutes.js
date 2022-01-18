@@ -13,6 +13,7 @@ const getItems = (db) =>{
   SELECT  items.id AS identity, Items.name AS item_name, items.item_quantity, items.location, items.created_at, items.vendor_id, items.total AS Amount, vendors.id, vendors.name AS vendors_name FROM items 
   JOIN vendors ON items.vendor_id = vendors.id
   WHERE items.status = $1
+  ORDER BY identity
   `, [1])
   .then(data => 
     {
