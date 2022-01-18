@@ -60,13 +60,14 @@
                 </tr>
               </thead>
               <tbody>
+                <!--  -->
                 <% for(const item of items){ %>
                   <tr>
                     <td><%= item.identity %> </td>
                     <td><%= item.item_name %> </td>
                     <td><%= item.item_quantity %></td>
                     <td><%= item.location %></td>
-                    <td><%= item.created_at.getFullYear()+ '-' + (item.created_at.getMonth()+1) + '-'+item.created_at.getDate() %> </td>
+                    <td><%= item.created_at.getFullYear()+ '-' + ('0' + (item.created_at.getMonth()+1)).slice(-2) + '-'+('0' + item.created_at.getDate()).slice(-2) %> </td>
                     <td><%= item.amount %></td>
                     <td><%= item.vendors_name %></td>
                    

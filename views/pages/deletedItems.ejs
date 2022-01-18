@@ -67,7 +67,7 @@
                       <td><%= item.item_name %> </td>
                       <td><%= item.item_quantity %></td>
                       <td><%= item.location %></td>
-                      <td><%= item.created_at.getFullYear()+ '-' + (item.created_at.getMonth()+1) + '-'+item.created_at.getDate() %> </td>
+                      <td><%= item.created_at.getFullYear()+ '-' + ('0' + (item.created_at.getMonth()+1)).slice(-2) + '-'+('0' + item.created_at.getDate()).slice(-2) %> </td>
                       <td><%= item.amount %></td>
                       <td><%= item.vendors_name %></td>
                       <td><button class="btn btn-outline-primary restorebtn" id="<%= item.id%>">Restore</button></td>
