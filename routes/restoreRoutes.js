@@ -13,7 +13,6 @@ module.exports = (db) => {
     const id = request.params.id;
     restoreItems(db, id).then(items => 
       {
-        console.log(data);
         response.json({items})
       }
       )
